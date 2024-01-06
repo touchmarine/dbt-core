@@ -39,6 +39,16 @@ introspect = click.option(
     default=True,
 )
 
+columns = click.option(
+    "--columns",
+    envvar=None,
+    help="Space-delimited list of columns returned by dbt show",
+    type=tuple,
+    cls=MultiOption,
+    multiple=True,
+    default=[],
+)
+
 compile_docs = click.option(
     "--compile/--no-compile",
     envvar=None,
