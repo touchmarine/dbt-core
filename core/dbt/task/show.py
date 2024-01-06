@@ -85,6 +85,8 @@ class ShowTask(CompileTask):
 
         for result in matched_results:
             table = result.agate_table
+            if self.args.columns:
+                table = table.select(self.args.columns)
 
             # Hack to get Agate table output as string
             output = io.StringIO()

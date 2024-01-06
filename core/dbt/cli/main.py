@@ -378,6 +378,7 @@ def compile(ctx, **kwargs):
 @cli.command("show")
 @click.pass_context
 @global_flags
+@p.columns
 @p.defer
 @p.deprecated_defer
 @p.exclude
