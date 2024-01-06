@@ -654,6 +654,16 @@ threads = click.option(
     type=click.INT,
 )
 
+truncate = click.option(
+    "--truncate/--no-truncate",
+    envvar=None,
+    help=(
+        "Truncate the columns returned by dbt show "
+        "(number of columns, width of columns, and max precision of numbers)"
+    ),
+    default=True,
+)
+
 use_experimental_parser = click.option(
     "--use-experimental-parser/--no-use-experimental-parser",
     envvar="DBT_USE_EXPERIMENTAL_PARSER",

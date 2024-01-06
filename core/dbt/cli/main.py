@@ -364,6 +364,7 @@ def compile(ctx, **kwargs):
 @p.inline
 @p.target_path
 @p.threads
+@p.truncate
 @p.vars
 @requires.postflight
 @requires.preflight
