@@ -401,6 +401,7 @@ def compile(ctx, **kwargs):
 @p.target
 @p.target_path
 @p.threads
+@p.truncate
 @p.vars
 @requires.postflight
 @requires.preflight
