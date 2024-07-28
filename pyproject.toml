@@ -1,6 +1,6 @@
 [project]
 name = "dbt-core"
-version = "1.8.4"
+version = "1.8.4-touchmarine"
 
 [tool.mypy]
 # TODO: widen range of files as we fix issues
