@@ -13,7 +13,4 @@ line-length = 99
 target-version = ['py38']
 
 [tool.setuptools]
-packages = ["core"]
-
-[project.scripts]
-dbt = "dbt.cli.main:cli"
+package-dir = {"" = "core"}
