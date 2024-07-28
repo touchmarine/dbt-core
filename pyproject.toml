@@ -1,5 +1,6 @@
 [project]
 name = "dbt-core"
+version = "1.8.4"
 
 [tool.mypy]
 # TODO: widen range of files as we fix issues
