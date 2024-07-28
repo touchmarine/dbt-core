@@ -1,3 +1,6 @@
+[project]
+name = "dbt-core"
+
 [tool.mypy]
 # TODO: widen range of files as we fix issues
 files = 'core/dbt'
